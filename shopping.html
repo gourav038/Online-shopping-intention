@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:lightseagreen;
+    }
+
+    .login {
+      background-color: beige;
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login">
+    <h1>Online Shopping Prediction</h1>
+      <form action="/shopping" method="post">
+        <div>ADMIN PAGE DURATION</div>
+        <input type="text" name="admin_page_duration" placeholder="admin_page_duration" required="required" /><br>
+        <div>No. of info pages</div>
+        <input type="text" name="num_of_info_pages" placeholder="num_of_info_pages" required="required" /><br>
+        <div>Num_of_product_pages</div>
+          <input type="text" name="num_of_product_pages" placeholder="num_of_product_pages" required="required" /><br>
+          <div>Product_page_duration</div>
+          <input type="text" name="product_page_duration" placeholder="product_page_duration" required="required" /><br>
+          <div>Total_duration</div>
+          <input type="text" name="total_duration" placeholder="total_duration" required="required" /><br>
+          <div>ExitRates</div>
+          <input type="text" name="ExitRates" placeholder="ExitRates" required="required" /><br>
+          <div>PageValues</div>
+          <input type="text" name="PageValues" placeholder="PageValues" required="required" /><br>
+          <div>Month</div>
+          <input type="text" name="Month" placeholder="Month" required="required" /><br>
+          <div>Region</div>
+          <input type="text" name="Region" placeholder="Region" required="required" /><br>
+          <div>User_type</div>
+          <input type="text" name="user_type" placeholder="user_type" required="required" /><br>
+          <div>Weekend</div>
+          <input type="text" name="Weekend" placeholder="Weekend" required="required" /><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+<body>
+
+   <br>
+   <br>
+
+
+ </div>
+ {{result}}
+
+</body>
+</html>
